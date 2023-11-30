@@ -1,0 +1,15 @@
+{
+  "name": "full_stack_react_toy_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private":"true",
+  "workspace": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "client": "yarn workspace client start",
+    "server": "yarn workspace server start"
+  }
+}
