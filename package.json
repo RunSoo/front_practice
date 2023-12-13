@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "mobx": "^6.12.0",
+    "mobx-react": "^9.1.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.55.0",
+    "eslint-plugin-mobx": "^0.0.9"
+  }
+}
