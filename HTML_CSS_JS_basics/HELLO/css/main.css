@@ -1,0 +1,56 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  /* transition: 1s; */
+}
+
+.box::before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+  background-color: royalblue;
+}
+
+[type="text"] {
+  background-color: orange;
+}
+
+[data-fruit-name] {
+  color: red;
+}
+
+.parent {
+  width: 300px;
+  height: 400px;
+  background-color: red;
+}
+
+.child {
+  width: 100px;
+  height: inherit;
+  background-color: inherit;
+  position: fixed;
+  top: 100px;
+  right: 10px;
+}
+
+/* 
+.box:hover {
+  width: 300px;
+  background-color: royalblue;
+}
+
+.box:active {
+  width: 350px;
+  background-color: red;
+}
+
+.box:focus {
+  background-color: pink;
+}
+
+input:focus {
+  background-color: beige;
+} */
