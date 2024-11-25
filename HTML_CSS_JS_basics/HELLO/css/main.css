@@ -12,6 +12,15 @@
   width: 30px;
   background-color: royalblue;
 }
+
+[type="text"] {
+  background-color: orange;
+}
+
+[data-fruit-name] {
+  color: red;
+}
+
 /* 
 .box:hover {
   width: 300px;
