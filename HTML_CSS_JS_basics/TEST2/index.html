@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+    />
+    <!--브라우저의 스타일을 초기화하고 시작하기!-->
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./js/main.js"></script>
+    <!--html 모두 불러온 뒤에 실행-->
+  </head>
+  <body>
+    <h1></h1>
+    <div class="hyunsoo">
+      <!--자동완성은 emmet의 도움 받는 것-->
+      <span>Hello</span>
+      <!-- 줄바꿈이 띄어쓰기로 들어감. 하나의 글자처럼 취급-->
+      <!--글자 크기만큼 가로, 세로가 줄어들려고 한다-->
+      <!--글자는 가로 사이즈와 세로 사이즈를 지정할 수 없음-->
+      <!-- 인라인 요소 안에 블록 요소 사용할 수 없음-->
+      <span>World</span>
+    </div>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <!--새 탭에 열기-->
+    <div>
+      <input type="text" value="hyunsoo" />
+      <input type="text" placeholder="hyunsoo" />
+      <input type="text" disabled />
+    </div>
+    <div>
+      <label> <input type="checkbox" /> Apple </label>
+      <label><input type="checkbox" checked />Banana</label>
+    </div>
+    <div>
+      <label>
+        <input type="radio" name="fruits" /> Apple
+        <input type="radio" name="fruits" />
+        Banana<!--name으로 묶어서 하나만 선택-->
+      </label>
+    </div>
+    <table>
+      <tr>
+        <!--행 먼저, 열 다음-->
+        <td>A</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>D</td>
+      </tr>
+    </table>
+    <ul>
+      <li>사과</li>
+      <li>딸기</li>
+      <li>수박</li>
+      <li>오렌지</li>
+    </ul>
+    <p>
+      동해물과 백두산이 마르고 닳도록<br />
+      하느님이 보우하사 <span class="red">우리나라</span> 만세
+    </p>
+    <div data-fruit-name="apple">사과</div>
+    <div data-fruit-name="banana">바나나</div>
+  </body>
+</html>

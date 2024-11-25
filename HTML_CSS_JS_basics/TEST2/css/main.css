@@ -1,0 +1,12 @@
+body > span {
+  font-size: 100px;
+}
+
+.red {
+  color: red;
+  background: black;
+}
+
+td {
+  border: 1px solid red;
+}
