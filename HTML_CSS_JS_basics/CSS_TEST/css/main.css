@@ -1,0 +1,29 @@
+html {
+  font-size: 16px;
+}
+
+div {
+  /* width: 100px;
+  height: 100px; */
+  /* background-color: orange; */
+}
+
+span {
+  /* background-color: orange; */
+}
+
+.parent {
+  width: 300px; /*기본값 auto*/
+  height: 200px;
+  background-color: royalblue;
+}
+
+.child {
+  /* width: 100%; */
+  /* width: 20em;  */
+  /* 16 * 20 = 320px */
+  width: 20rem;
+  height: 100px;
+  /* height: 100vh; */
+  background-color: orange;
+}
