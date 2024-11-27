@@ -141,3 +141,8 @@ HTML5에서는 모두 정상 동작
 - Hex 색상코드: 16진수 색상(#000, #FFFFFF)
 - RGB: 빛의 삼원색(rgb(255, 255, 255))
 - RGBA: 빛의 삼원색 + 투명도(rgba(0, 0, 0, 0.5))
+
+✔️ box-sizing
+
+- content-box: 요소의 내용으로 크기 계산
+- border-box: 요소의 내용 + padding + border로 크기 계산
