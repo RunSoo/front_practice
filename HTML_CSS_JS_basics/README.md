@@ -163,3 +163,39 @@ HTML5에서는 모두 정상 동작
 - grid: 그리드(2차원 레이아웃)
 - none: 보여짐 특성 없음, 화면에서 사라짐
 - 기타: table, table-row, table-cell 등
+
+✔️ 배경
+
+- background-repeat
+  - repeat: 이미지를 수직, 수평 반복(default)
+  - repeat-x: 이미지를 수평 반복
+  - repeat-y: 이미지를 수직 반복
+  - no-repeat: 반복 없음
+- background-position: 요소의 배경 이미지 위치
+- background-size
+  - auto: 이미지 실제 크기
+  - 단위
+  - cover: 비율 유지, 요소의 더 넓은 너비에 맞춤
+  - contain: 비율 유지, 더 짧은 너비에 맞춤
+- background-attachment: 요소의 배경 이미지 스크롤 특성
+  - scroll: 이미지가 요소 따라 같이 스크롤
+  - fixed: 이미지가 뷰포트에 고정, 스크롤 X
+  - local: 요소 내 스크롤 시 이미지 같이 스크롤
+
+✔️ position
+
+- static: 기준 없음(default)
+- relative: 요소 자신을 기준
+- absolute: 위치 상 부모 요소를 기준
+- fixed: 뷰포트(브라우저)를 기준
+- sticky: 스크롤 영역 기준
+
+✔️ 요소 쌓임 순서
+
+어떤 요소가 사용자와 더 가깝게 있는지(위에 쌓이는지) 결정
+
+1. 요소에 position 속성의 값이 있는 경우 위에 쌓임(기본값 static 제외)
+2. 1번 조건 같은 경우, z-index 속성 숫자 값 높을 수록 위에 쌓임
+3. 1번 2번 같은 경우, HTML의 다음 구조일수록 위에 쌓임
+
+** position 속성의 값으로 absolute, fixed가 지정된 요소는 display 속성이 `block`으로 변경됨 **

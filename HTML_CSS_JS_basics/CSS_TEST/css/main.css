@@ -32,6 +32,8 @@ span {
 }
 
 .container {
+  background-color: royalblue;
+  position: relative;
 }
 
 .container .item {
@@ -58,6 +60,11 @@ span {
 
 .container .item:nth-child(2) {
   border-radius: 10px;
+  /* position: relative; */ /*원래 자기 위치 기준*/
+  position: absolute;
+  /*위치상 부모에 특정 위치값이 들어있어야 함*/
+  top: 30px;
+  left: 200px;
 }
 
 h1 {
@@ -107,4 +114,15 @@ a {
     line-through: 중앙선
   */
   text-align: center;
+}
+
+.background {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0gcUu-D8ElLcFw0TZSvCdBasqs4rG_YesHQm9Rw269lUZeRMN-dPzVZ9VH82U9Ji8OC3XHBke75d21Coy7Cho4Q");
+  /* background-size: 200px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
