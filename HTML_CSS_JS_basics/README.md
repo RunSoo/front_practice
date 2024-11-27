@@ -146,3 +146,10 @@ HTML5에서는 모두 정상 동작
 
 - content-box: 요소의 내용으로 크기 계산
 - border-box: 요소의 내용 + padding + border로 크기 계산
+
+✔️ overflow
+
+- visible: 넘친 내용을 그대로 보여줌
+- hidden: 넘친 내용을 잘라냄
+- scroll: 넘친 내용을 잘라냄, 스크롤바 생성
+- auto: 넘친 내용이 있는 경우에만 잘라내고 스크롤바 생성

@@ -16,16 +16,19 @@ span {
   width: 300px; /*기본값 auto*/
   height: 200px;
   background-color: royalblue;
+  /* overflow: auto; */
+  overflow: scroll;
+  padding: 10px;
 }
 
 .child {
   /* width: 100%; */
   /* width: 20em;  */
   /* 16 * 20 = 320px */
-  width: 20rem;
+  width: 600px;
   height: 100px;
   /* height: 100vh; */
-  background-color: orange;
+  background-color: rgb(255, 0, 200);
 }
 
 .container {
