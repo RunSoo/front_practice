@@ -49,4 +49,10 @@ span {
 .container .item:last-child {
   border: 10px dashed royalblue;
   /* border만큼 크기 커진다는 것 주의 */
+  border-radius: 0 20px 0 0;
+  /* 왼쪽 상단부터 시계방향으로 도는 구조 */
+}
+
+.container .item:nth-child(2) {
+  border-radius: 10px;
 }
