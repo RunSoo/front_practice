@@ -87,4 +87,24 @@ p {
     숫자: 요소의 글꼴 크기의 배수로 지정
     단위 px, em, rem등 단위로 지정
   */
+  text-indent: 50px; /*들여쓰기*/
+}
+
+a {
+  margin: 100px 0;
+  display: block;
+  box-sizing: border-box;
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  /*
+    none: 장식 없음
+    underline: 밑줄
+    overline: 윗줄
+    line-through: 중앙선
+  */
+  text-align: center;
 }
