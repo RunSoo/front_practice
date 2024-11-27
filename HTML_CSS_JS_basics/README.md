@@ -153,3 +153,13 @@ HTML5에서는 모두 정상 동작
 - hidden: 넘친 내용을 잘라냄
 - scroll: 넘친 내용을 잘라냄, 스크롤바 생성
 - auto: 넘친 내용이 있는 경우에만 잘라내고 스크롤바 생성
+
+✔️ display
+
+- block: 상자(레이아웃) 요소
+- inline: 글자 요소
+- inline-block: 글자 + 상자 요소 (기본은 글자, 가로 세로 지정 가능)
+- flex: 플렉스 박스(1차원 레이아웃)
+- grid: 그리드(2차원 레이아웃)
+- none: 보여짐 특성 없음, 화면에서 사라짐
+- 기타: table, table-row, table-cell 등
