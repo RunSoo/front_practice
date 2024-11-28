@@ -126,3 +126,15 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.flex-container {
+  background-color: royalblue;
+  display: flex;
+}
+
+.flex-container .flex-item {
+  width: 100px;
+  height: 100px;
+  border: 3px dashed red;
+  background-color: orange;
+}

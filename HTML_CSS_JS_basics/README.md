@@ -199,3 +199,22 @@ HTML5에서는 모두 정상 동작
 3. 1번 2번 같은 경우, HTML의 다음 구조일수록 위에 쌓임
 
 ** position 속성의 값으로 absolute, fixed가 지정된 요소는 display 속성이 `block`으로 변경됨 **
+
+✔️ flex
+
+- display: flex container의 화면 출력 특성
+  - flex: 블록 요소와 같이 flex container 정의
+  - inline-flex: 인라인 요소와 같이 flex container 정의
+- flex-direction: 주 축을 설정
+  - row: 행 축(좌 ▶️ 우)
+  - row-reverse: 행 축(우 ▶️ 좌)
+  - column: 열 축(위 ▶️ 아래)
+  - column-reverse: 열 축(아래 ▶️ 위)
+- flex-wrap: flex items 묶음(줄 바꿈) 여부
+  - nowrap: 묶음(줄 바꿈) 없음
+  - wrap: 여러 줄로 묶음
+  - wrap-reverse: wrap의 반대 방향으로 묶음
+- justify-content: 주 축의 정렬 방법
+  - flex-start: flex items를 시작점으로 정렬
+  - flex-end: flex items를 끝점으로 정렬
+  - center: 가운데 정렬
