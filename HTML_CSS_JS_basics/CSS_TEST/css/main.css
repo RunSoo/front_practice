@@ -16,14 +16,125 @@ span {
   width: 300px; /*기본값 auto*/
   height: 200px;
   background-color: royalblue;
+  /* overflow: auto; */
+  overflow: scroll;
+  padding: 10px;
 }
 
 .child {
   /* width: 100%; */
   /* width: 20em;  */
   /* 16 * 20 = 320px */
-  width: 20rem;
+  width: 600px;
   height: 100px;
   /* height: 100vh; */
+  background-color: rgb(255, 0, 200);
+}
+
+.container {
+  background-color: royalblue;
+  position: relative;
+}
+
+.container .item {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  /* margin-bottom: -20px; */
+  margin-bottom: 20px;
+
+  padding: 20px;
+  /* border: 선-두께 선-종류 선-색상 */
+}
+
+.container .item:first-child {
+  border: 10px solid tan;
+}
+
+.container .item:last-child {
+  border: 10px dashed royalblue;
+  /* border만큼 크기 커진다는 것 주의 */
+  border-radius: 0 20px 0 0;
+  /* 왼쪽 상단부터 시계방향으로 도는 구조 */
+}
+
+.container .item:nth-child(2) {
+  border-radius: 10px;
+  /* position: relative; */ /*원래 자기 위치 기준*/
+  position: absolute;
+  /*위치상 부모에 특정 위치값이 들어있어야 함*/
+  top: 30px;
+  left: 200px;
+}
+
+h1 {
+  font-size: 24px; /*기본 16px*/
+  font-weight: 700; /*글자의 두께(가중치)*/
+  /*
+    기본 두께 400
+    두껍게 700
+    범위 100~900
+  */
+  font-style: italic; /*글자의 기울기*/
+  font-family: serif;
+  /*
+    서체
+    font-family: 글꼴1, "글꼴2", ...글꼴계열(필수);
+    첫번째 부터 시도하고 안되면 그다음꺼 시도하다가 다 쓸 수 없으면 마지막 중에 암꺼나
+  */
+}
+
+p {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid;
+  box-sizing: border-box;
+  line-height: 1.4; /*한 줄의 높이*/
+  /*
+    숫자: 요소의 글꼴 크기의 배수로 지정
+    단위 px, em, rem등 단위로 지정
+  */
+  text-indent: 50px; /*들여쓰기*/
+}
+
+a {
+  margin: 100px 0;
+  display: block;
+  box-sizing: border-box;
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  /*
+    none: 장식 없음
+    underline: 밑줄
+    overline: 윗줄
+    line-through: 중앙선
+  */
+  text-align: center;
+}
+
+.background {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0gcUu-D8ElLcFw0TZSvCdBasqs4rG_YesHQm9Rw269lUZeRMN-dPzVZ9VH82U9Ji8OC3XHBke75d21Coy7Cho4Q");
+  /* background-size: 200px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flex-container {
+  background-color: royalblue;
+  display: flex;
+}
+
+.flex-container .flex-item {
+  width: 100px;
+  height: 100px;
+  border: 3px dashed red;
   background-color: orange;
 }

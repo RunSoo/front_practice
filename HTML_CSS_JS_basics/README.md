@@ -134,3 +134,87 @@ HTML5에서는 모두 정상 동작
 - vh 뷰포트 세로 너비의 백분율
 
 브라우저는 따로 명시가 되어 있지 않으면 기본적으로 텍스트 크기 16px
+
+✔️ 색상 표현
+
+- 색상 이름: 브라우저에서 제공하는 색상 이름
+- Hex 색상코드: 16진수 색상(#000, #FFFFFF)
+- RGB: 빛의 삼원색(rgb(255, 255, 255))
+- RGBA: 빛의 삼원색 + 투명도(rgba(0, 0, 0, 0.5))
+
+✔️ box-sizing
+
+- content-box: 요소의 내용으로 크기 계산
+- border-box: 요소의 내용 + padding + border로 크기 계산
+
+✔️ overflow
+
+- visible: 넘친 내용을 그대로 보여줌
+- hidden: 넘친 내용을 잘라냄
+- scroll: 넘친 내용을 잘라냄, 스크롤바 생성
+- auto: 넘친 내용이 있는 경우에만 잘라내고 스크롤바 생성
+
+✔️ display
+
+- block: 상자(레이아웃) 요소
+- inline: 글자 요소
+- inline-block: 글자 + 상자 요소 (기본은 글자, 가로 세로 지정 가능)
+- flex: 플렉스 박스(1차원 레이아웃)
+- grid: 그리드(2차원 레이아웃)
+- none: 보여짐 특성 없음, 화면에서 사라짐
+- 기타: table, table-row, table-cell 등
+
+✔️ 배경
+
+- background-repeat
+  - repeat: 이미지를 수직, 수평 반복(default)
+  - repeat-x: 이미지를 수평 반복
+  - repeat-y: 이미지를 수직 반복
+  - no-repeat: 반복 없음
+- background-position: 요소의 배경 이미지 위치
+- background-size
+  - auto: 이미지 실제 크기
+  - 단위
+  - cover: 비율 유지, 요소의 더 넓은 너비에 맞춤
+  - contain: 비율 유지, 더 짧은 너비에 맞춤
+- background-attachment: 요소의 배경 이미지 스크롤 특성
+  - scroll: 이미지가 요소 따라 같이 스크롤
+  - fixed: 이미지가 뷰포트에 고정, 스크롤 X
+  - local: 요소 내 스크롤 시 이미지 같이 스크롤
+
+✔️ position
+
+- static: 기준 없음(default)
+- relative: 요소 자신을 기준
+- absolute: 위치 상 부모 요소를 기준
+- fixed: 뷰포트(브라우저)를 기준
+- sticky: 스크롤 영역 기준
+
+✔️ 요소 쌓임 순서
+
+어떤 요소가 사용자와 더 가깝게 있는지(위에 쌓이는지) 결정
+
+1. 요소에 position 속성의 값이 있는 경우 위에 쌓임(기본값 static 제외)
+2. 1번 조건 같은 경우, z-index 속성 숫자 값 높을 수록 위에 쌓임
+3. 1번 2번 같은 경우, HTML의 다음 구조일수록 위에 쌓임
+
+** position 속성의 값으로 absolute, fixed가 지정된 요소는 display 속성이 `block`으로 변경됨 **
+
+✔️ flex
+
+- display: flex container의 화면 출력 특성
+  - flex: 블록 요소와 같이 flex container 정의
+  - inline-flex: 인라인 요소와 같이 flex container 정의
+- flex-direction: 주 축을 설정
+  - row: 행 축(좌 ▶️ 우)
+  - row-reverse: 행 축(우 ▶️ 좌)
+  - column: 열 축(위 ▶️ 아래)
+  - column-reverse: 열 축(아래 ▶️ 위)
+- flex-wrap: flex items 묶음(줄 바꿈) 여부
+  - nowrap: 묶음(줄 바꿈) 없음
+  - wrap: 여러 줄로 묶음
+  - wrap-reverse: wrap의 반대 방향으로 묶음
+- justify-content: 주 축의 정렬 방법
+  - flex-start: flex items를 시작점으로 정렬
+  - flex-end: flex items를 끝점으로 정렬
+  - center: 가운데 정렬
