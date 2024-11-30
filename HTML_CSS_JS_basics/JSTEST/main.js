@@ -137,3 +137,20 @@ const hyunsoo = {
 const herName = hyunsoo.getName(); // 함수 호출
 console.log(herName);
 console.log(hyunsoo.getName());
+
+let isReveal = true;
+let isChecked = false;
+
+if (isReveal) {
+  console.log("Reveal!");
+}
+
+if (isChecked) {
+  console.log("Checked!");
+}
+
+if (isReveal) {
+  console.log("Reveal");
+} else {
+  console.log("Hide");
+}
