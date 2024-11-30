@@ -314,3 +314,5 @@ HTML5에서는 모두 정상 동작
 
 ✔️ Zero-based Numbering
 <b>0 기반 번호 매기기!</b>
+
+✔️ 데이터 종류
