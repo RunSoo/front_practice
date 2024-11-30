@@ -1,3 +1,13 @@
+## 목차
+
+[프론트엔드 개발](#프론트엔드-개발)
+[웹 표준](#웹-표준)
+[웹 이미지](#웹-이미지)
+[오픈 소스 라이선스](#오픈-소스-라이선스)
+[HTML 개요](#html-개요)
+[CSS 속성](#css-속성)
+[JS 선행](#js-선행)
+
 ### 프론트엔드 개발
 
 🗨️ HTML, CSS, JS를 사용해 데이터를 그래픽 사용자 인터페이스(GUI)로 변환하고, 그것으로 사용자와 상호 작용할 수 있도록 하는 것
@@ -288,3 +298,19 @@ HTML5에서는 모두 정상 동작
 - backface-visibility
   - visible: 뒷면 보임
   - hidden: 뒷면 숨김
+
+### JS 선행
+
+✔️ 표기법
+
+- dash-case(kebab-case): html, css에서 자주 사용
+  - the-quick-brown-fox-jumps-over-the-lazy-dog
+- snake_case: html, css에서 자주 사용
+  - the_quick_brown_fox_jumps_over_the_lazy_dog
+- camelCase: JS에서 자주 사용
+  - theQuickBrownFoxJumpsOverTheLazyDog
+- PascalCase: JS에서 자주 사용(특수한 경우)
+  - TheQuickBrownFoxJumpsOverTheLazyDog
+
+✔️ Zero-based Numbering
+<b>0 기반 번호 매기기!</b>
