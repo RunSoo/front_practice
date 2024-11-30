@@ -63,3 +63,19 @@ let fruitArr = ["Apple", "Banana", "Cherry"];
 console.log(fruitArr[0]);
 console.log(fruitArr[1]);
 console.log(fruitArr[2]);
+
+// let: 재사용 가능. 변수 선언
+let a = 2;
+let b = 5;
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+
+a = 999;
+console.log(a);
+
+const c = 12;
+c = 999; // TypeError: Assignment to constant variable.
+console.log(c);
