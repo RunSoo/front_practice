@@ -7,6 +7,7 @@
 [HTML 개요](#html-개요)
 [CSS 속성](#css-속성)
 [JS 선행](#js-선행)
+[스타벅스 예제](#스타벅스-예제)
 
 ### 프론트엔드 개발
 
@@ -332,3 +333,10 @@ HTML5에서는 모두 정상 동작
 <i>Document Object Model Application Programming Interface</i>
 
 ✔️ 메소드 체이닝
+
+### 스타벅스 예제
+
+✔️ 오픈 그래프
+
+- 웹페이지가 소셜 미디어로 공유될 때 우선적으로 활용되는 정보를 지정
+- [더 많은 오픈 그래프](https://ogp.me/)
