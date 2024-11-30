@@ -326,3 +326,7 @@ HTML5에서는 모두 정상 동작
 ✔️ 함수: 특정 동작(기능)을 수행하는 일부 코드의 집합(부분)
 
 ✔️ 조건문
+
+🗨️ **DOM API**
+
+<i>Document Object Model Application Programming Interface</i>
