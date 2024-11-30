@@ -77,5 +77,63 @@ a = 999;
 console.log(a);
 
 const c = 12;
-c = 999; // TypeError: Assignment to constant variable.
+// c = 999; // TypeError: Assignment to constant variable.
 console.log(c);
+
+// 함수 선언
+function helloFunc() {
+  // 실행 코드
+  console.log(1234);
+}
+
+// 함수 호출
+helloFunc();
+
+function returnFunc() {
+  return 123;
+}
+
+let d = returnFunc();
+
+console.log(d);
+
+// 함수 선언
+function sum(a, b) {
+  // a, b는 매개변수(Parameter)
+  return a + b;
+}
+
+let sumA = sum(1, 2); // 1, 2는 인수(arguments)
+let sumB = sum(7, 12);
+let sumC = sum(2, 4);
+
+console.log(sumA, sumB, sumC);
+
+// 가명(이름이 있는) 함수
+// 함수 선언
+function helloFunc() {
+  console.log("Hello");
+}
+
+// 익명 함수
+// 함수 표현
+let world = function () {
+  console.log("World");
+};
+
+helloFunc();
+world();
+
+// 객체 데이터
+const hyunsoo = {
+  name: "Hyunsoo",
+  age: 26,
+  getName: function () {
+    // 함수를 속성처럼 사용 => 메소드
+    return this.name;
+  },
+};
+
+const herName = hyunsoo.getName(); // 함수 호출
+console.log(herName);
+console.log(hyunsoo.getName());
