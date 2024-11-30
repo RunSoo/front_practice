@@ -198,7 +198,7 @@ HTML5에서는 모두 정상 동작
 2. 1번 조건 같은 경우, z-index 속성 숫자 값 높을 수록 위에 쌓임
 3. 1번 2번 같은 경우, HTML의 다음 구조일수록 위에 쌓임
 
-** position 속성의 값으로 absolute, fixed가 지정된 요소는 display 속성이 `block`으로 변경됨 **
+**position 속성의 값으로 absolute, fixed가 지정된 요소는 display 속성이 `block`으로 변경됨**
 
 ✔️ flex
 
