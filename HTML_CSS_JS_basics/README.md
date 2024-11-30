@@ -244,3 +244,47 @@ HTML5에서는 모두 정상 동작
 - flex-basis: flex item의 공간 배분 전 기본 너비
   - auto: 요소의 content 너비
   - 단위: px, em, rem 등 단위로 지정
+
+✔️ transition: 속성명 지속시간(필수) 타이밍함수 대기시간
+
+- transition-property: 전환 효과를 사용할 속성 이름을 지정
+  - all (default): 모든 속성에 적용
+  - 속성 이름: 전환 효과를 사용할 속성 효과 명시
+- transition-timing-function
+  - ease: 느리게-빠르게-느리게
+  - linear: 일정하게
+  - ease-in: 느리게 - 빠르게
+  - ease-out: 빠르게 - 느리게
+  - ease-in-out: 느리게-빠르게-느리게
+    [easing 함수 치트 시트](https://easings.net/ko)
+- transition-delay: 전환 효과가 몇 초 뒤에 시작할지 대기시간 지정
+  - 0s: 대기시간 없음
+  - 시간: 대기시간(s)을 지정
+- transform
+
+  - <i>변환함수1 변환함수2 변환함수3 ...</i>
+  - </i>원근법 이동 크기 회전 기울임</i>
+  - **2D 변환 함수**
+    - translate(x, y): 이동(x축, y축)
+    - translateX(x): 이동(x축)
+    - translateY(y): 이동(y축)
+    - scale(x, y): 크기(x축, y축)
+    - rotate(degree): 회전(각도)
+    - skew(x, y): 기울임(x축, y축)
+    - skewX(x): 기울임(x축)
+    - skewY(y): 기울임(y축)
+  - **3D 변환 함수** - perspective: 원근법(거리) - 얼마나 가까이서 보느냐 따라서 왜곡 심해짐(가까우면 왜곡 심함) - rotateX(x): 회전(x축) - rotateY(y): 회전(y축)
+
+✔️ perspective
+
+<i>perspective 속성과 함수 차이점</i>
+
+속성에 대해서는 적용 대상이 관찰 대상의 부모
+
+함수는 관찰 대상 자체
+
+기준점 설정: perspective-origin / transform-origin
+
+- backface-visibility
+  - visible: 뒷면 보임
+  - hidden: 뒷면 숨김

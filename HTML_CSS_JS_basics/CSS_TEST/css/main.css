@@ -171,3 +171,49 @@ a {
   flex-basis: 0;
   /* flex-basis: 100px; */
 }
+
+.transition {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  transition: width 0.5s 1s, background-color 1s;
+}
+
+.transition:hover {
+  width: 300px;
+  background-color: greenyellow;
+}
+
+.container-3 {
+  margin: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+}
+
+.container-3 .item-3 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transform: perspective(300px) rotateX(45deg) translateX(100pxt);
+}
+
+.container-4 {
+  margin: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+  perspective: 250px;
+}
+
+.container-4 .item-4 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(30deg);
+  backface-visibility: hidden;
+}
