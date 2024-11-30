@@ -182,4 +182,20 @@ boxEl.addEventListener("click", function () {
 // isContains = boxEl.classList.contains("active");
 // console.log(isContains);
 
-console.log(boxEl);
+// console.log(boxEl);
+
+const boxEls = document.querySelectorAll(".box");
+
+boxEls.forEach(function (boxEl, index) {
+  boxEl.classList.add(`order-${index + 1}`);
+  console.log(index, boxEl);
+});
+
+const firstEl = document.querySelector(".box");
+
+// Getter, 값을 얻는 용도
+console.log(firstEl.textContent);
+
+// Setter, 값을 지정하는 용도
+firstEl.textContent = "??";
+console.log(firstEl.textContent);
