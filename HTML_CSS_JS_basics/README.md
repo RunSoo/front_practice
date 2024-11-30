@@ -218,3 +218,29 @@ HTML5에서는 모두 정상 동작
   - flex-start: flex items를 시작점으로 정렬
   - flex-end: flex items를 끝점으로 정렬
   - center: 가운데 정렬
+  - space-between: 각 item 사이 균등 정렬
+  - space-around: 각 item의 외부 여백 균등하게 정렬
+- align-content: 교차 축의 **여러 줄** 정렬 방법
+  - stretch: flex items를 시작점으로 정렬
+  - flex-start: flex items를 시작점으로 정렬
+  - flex-end: flex items를 끝점으로 정렬
+  - center: flex items를 가운데 정렬
+  - space-between: 각 flex item 사이를 균등하게 정렬
+  - space-around: 각 flex item의 외부 여백을 균등하게 정렬
+- align-items: 교차 축의 **한 줄** 정렬 방법
+  - stretch: flex items를 교차 축으로 늘임
+  - flex-start: flex items를 각 줄의 시작점으로 정렬
+  - flex-end: flex items를 각 줄의 끝점으로 정렬
+  - center: flex items를 각 줄의 가운데 정렬
+- order: flex item의 순서
+  - 0: 순서 없음
+  - 숫자: 숫자가 작을 수록 먼저
+- flex-grow: flex item의 증가 너비 비율
+  - 0: 증가 비율 없음
+  - 숫자: 증가 비율
+- flex-shrink: flex item의 감소 너비 비율
+  - 1: flex container 너비에 따라 감소 비율 적용
+  - 숫자: 감소 비율
+- flex-basis: flex item의 공간 배분 전 기본 너비
+  - auto: 요소의 content 너비
+  - 단위: px, em, rem 등 단위로 지정
