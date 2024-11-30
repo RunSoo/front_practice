@@ -199,3 +199,10 @@ console.log(firstEl.textContent);
 // Setter, 값을 지정하는 용도
 firstEl.textContent = "??";
 console.log(firstEl.textContent);
+
+const aStr = "Hello~";
+
+const bStr = aStr.split("").reverse().join(""); // 메소드 체이닝
+
+console.log(aStr);
+console.log(bStr);

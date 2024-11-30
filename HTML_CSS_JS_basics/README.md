@@ -330,3 +330,5 @@ HTML5에서는 모두 정상 동작
 🗨️ **DOM API**
 
 <i>Document Object Model Application Programming Interface</i>
+
+✔️ 메소드 체이닝
