@@ -1,3 +1,14 @@
+## 목차
+
+[프론트엔드 개발](#프론트엔드-개발)
+[웹 표준](#웹-표준)
+[웹 이미지](#웹-이미지)
+[오픈 소스 라이선스](#오픈-소스-라이선스)
+[HTML 개요](#html-개요)
+[CSS 속성](#css-속성)
+[JS 선행](#js-선행)
+[스타벅스 예제](#스타벅스-예제)
+
 ### 프론트엔드 개발
 
 🗨️ HTML, CSS, JS를 사용해 데이터를 그래픽 사용자 인터페이스(GUI)로 변환하고, 그것으로 사용자와 상호 작용할 수 있도록 하는 것
@@ -244,3 +255,88 @@ HTML5에서는 모두 정상 동작
 - flex-basis: flex item의 공간 배분 전 기본 너비
   - auto: 요소의 content 너비
   - 단위: px, em, rem 등 단위로 지정
+
+✔️ transition: 속성명 지속시간(필수) 타이밍함수 대기시간
+
+- transition-property: 전환 효과를 사용할 속성 이름을 지정
+  - all (default): 모든 속성에 적용
+  - 속성 이름: 전환 효과를 사용할 속성 효과 명시
+- transition-timing-function
+  - ease: 느리게-빠르게-느리게
+  - linear: 일정하게
+  - ease-in: 느리게 - 빠르게
+  - ease-out: 빠르게 - 느리게
+  - ease-in-out: 느리게-빠르게-느리게
+    [easing 함수 치트 시트](https://easings.net/ko)
+- transition-delay: 전환 효과가 몇 초 뒤에 시작할지 대기시간 지정
+  - 0s: 대기시간 없음
+  - 시간: 대기시간(s)을 지정
+- transform
+
+  - <i>변환함수1 변환함수2 변환함수3 ...</i>
+  - </i>원근법 이동 크기 회전 기울임</i>
+  - **2D 변환 함수**
+    - translate(x, y): 이동(x축, y축)
+    - translateX(x): 이동(x축)
+    - translateY(y): 이동(y축)
+    - scale(x, y): 크기(x축, y축)
+    - rotate(degree): 회전(각도)
+    - skew(x, y): 기울임(x축, y축)
+    - skewX(x): 기울임(x축)
+    - skewY(y): 기울임(y축)
+  - **3D 변환 함수** - perspective: 원근법(거리) - 얼마나 가까이서 보느냐 따라서 왜곡 심해짐(가까우면 왜곡 심함) - rotateX(x): 회전(x축) - rotateY(y): 회전(y축)
+
+✔️ perspective
+
+<i>perspective 속성과 함수 차이점</i>
+
+속성에 대해서는 적용 대상이 관찰 대상의 부모
+
+함수는 관찰 대상 자체
+
+기준점 설정: perspective-origin / transform-origin
+
+- backface-visibility
+  - visible: 뒷면 보임
+  - hidden: 뒷면 숨김
+
+### JS 선행
+
+✔️ 표기법
+
+- dash-case(kebab-case): html, css에서 자주 사용
+  - the-quick-brown-fox-jumps-over-the-lazy-dog
+- snake_case: html, css에서 자주 사용
+  - the_quick_brown_fox_jumps_over_the_lazy_dog
+- camelCase: JS에서 자주 사용
+  - theQuickBrownFoxJumpsOverTheLazyDog
+- PascalCase: JS에서 자주 사용(특수한 경우)
+  - TheQuickBrownFoxJumpsOverTheLazyDog
+
+✔️ Zero-based Numbering
+<b>0 기반 번호 매기기!</b>
+
+✔️ 데이터 종류
+
+✔️ 변수: 데이터를 저장하고 참조(사용)하는 데이터의 이름
+
+✔️ 예약어: 특별한 의미를 가지고 있어 변수나 함수 이름 등으로 사용할 수 없는 단어
+
+- `this`, `if`, `break` 등 (SyntaxError)
+
+✔️ 함수: 특정 동작(기능)을 수행하는 일부 코드의 집합(부분)
+
+✔️ 조건문
+
+🗨️ **DOM API**
+
+<i>Document Object Model Application Programming Interface</i>
+
+✔️ 메소드 체이닝
+
+### 스타벅스 예제
+
+✔️ 오픈 그래프
+
+- 웹페이지가 소셜 미디어로 공유될 때 우선적으로 활용되는 정보를 지정
+- [더 많은 오픈 그래프](https://ogp.me/)
