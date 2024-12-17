@@ -27,16 +27,31 @@ window.addEventListener(
         opacity: 0,
         display: "none", // display 속성처럼 값이 숫자가 아닌 속성은 중간값이 존재하지 않아 자연스러운 전환 효과 적용 ❌
       });
+      // 버튼 보이기
+      gsap.to("#to-top", 0.2, {
+        x: 0,
+      });
     } else {
       // 배지 보이기
       gsap.to(badgeEl, 0.6, {
         opacity: 1,
         display: "block",
       });
+      // 버튼 숨기기
+      gsap.to("#to-top", 0.2, {
+        x: 100,
+      });
     }
   }, 300)
 );
 // _.throttle(함수, 시간)
+
+const toTopEl = document.querySelector("#to-top");
+toTopEl.addEventListener("click", function () {
+  gsap.to(window, 0.7, {
+    scrollTo: 0,
+  });
+});
 
 const fadeEls = document.querySelectorAll(".visual .fade-in");
 fadeEls.forEach(function (fadeEl, index) {
